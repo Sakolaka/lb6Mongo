@@ -56,18 +56,18 @@
     if (result.length > 0) {
         let output = "";
         result.forEach(function(element){
-            output += "<br>Date: " + element.date;
-            output += "<br>Time: " + element.time;
-            output += "<br>licensed_until: " + element.licensed_until;
-            output += "<br>Discipline: " + element.discipline;
-            output += "<br>Type: " + element.type;
-            output += "<br>processor: " + element.processor.join(", ");
-            output += "<br>licensed_software: " + element.licensed_software.join(", ");
+            output += "<br>Inventory Number: " + element.inventory_number;
+            output += "<br>Purchase Year: " + element.purchase_year;
+            output += "<br>Warranty Period: " + element.warranty_period;
+            output += "<br>Processor: " + element.licensed_until;
+            output += "<br>Licensed until: " + element.type;
+            output += "<br>Memory: " + element.memory;
+            output += "<br>Disk Capacity: " + element.disk_capacity;
+            output += "<br>Licensed Software: " + element.licensed_software;
             output += "<br>";
         });
         document.write("Попередній запит:" + output);
     }
 </script>
-
 </body>
 </html>
